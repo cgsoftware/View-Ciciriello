@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	 <record model="ir.ui.view" id="view_addresss_cici">
+            <field name="name">view.address.cici</field>
+            <field name="model">res.partner.address</field>
+            <field name="inherit_id" ref="base.view_partner_address_tree"/>
+            <field name="type">tree</field>
+        	<field name="arch" type="xml">
+            	<tree string="Partner Addresses">
+            		<field name="street" position="replace"/>
+            	</tree>
+            </field>
+     </record>
+</data>
+</openerp>
+            		

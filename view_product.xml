@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	 <record model="ir.ui.view" id="view_product_cici">
+            <field name="name">view.product.cici</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="ProductCici.product_marchio_form"/>
+            <field name="type">form</field>
+        	<field name="arch" type="xml">
+            	<field name="marchio_ids" position="replace">
+            		<field name="marchio_ids" required="True"/>
+            		
+                </field>
+         </field>
+     </record>
+     
+     <record model="ir.ui.view" id="view_defaultcode_cici">
+     	<field name="name">view.defaultcode.cici</field>
+		<field name="model">product.product</field>
+		<field name="inherit_id" ref="product.product_normal_form_view" />
+		<field eval="7" name="priority"/>
+        <field name="arch" type="xml">
+            			<field name="default_code" position="replace">
+            				<field name="default_code" required="True"/>
+            			</field>
+            	
+			
+     	</field>
+     </record>
+</data>
+</openerp>
+            		
