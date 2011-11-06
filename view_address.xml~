@@ -12,19 +12,6 @@
             	</tree>
             </field>
      </record>
-     
-     <record model="ir.ui.view" id="res_partner_tree_address1">
-            <field name="name">res.partner.tree_address1</field>
-            <field name="model">res.partner</field>
-            <field name="inherit_id" ref="base.view_partner_tree"/>
-                <field name="arch" type="xml">
-		  <field name="city" position="after">
-		      <field name="street"/>
-		    </field>
-		  </field>
-      </record>
-
-
 </data>
 </openerp>
             		
