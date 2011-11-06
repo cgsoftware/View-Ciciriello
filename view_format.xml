@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+	 <record model="ir.ui.view" id="view_format_cici">
+            <field name="name">view.format.cici</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_product_tree_view"/>
+            <field name="type">tree</field>
+            <field eval="7" name="priority"/>
+            <field name="arch" type="xml">
+              
+                	<field name="name" position= "replace">
+                		<field name="name"/>
+                		<field name="formato"/>
+                		
+ 
+            </field>
+            </field>
+            
+    </record>
+   </data>
+ </openerp>
+   
